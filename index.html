@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Typing Game</title>
+</head>
+<body>
+    <header>
+        <div id="score" class="score">Cancelled Spell: 0</div>
+        <div id="shield">Shield: 3</div>
+        <div id="time">Surviving time: 00:00</div>
+    </header>
+
+    <div class="game-container">
+        <canvas id="canvas"></canvas>
+        <p id="game-text">Demon is throwing spell !</p>
+        <div id="menu" class="menu">
+            <h1>TYPING GAME</h1>
+            <button id="start" class="start">start</button>
+            <select id="diff">
+                <option value="2">easy</option>
+                <option value="4" selected>normal</option>
+                <option value="6">hard</option>
+            </select>
+            <div class="score-container">
+                <p id="best-score">High score: 0</p>
+                <!-- <p id="best-time">High time: 00:00</p> -->
+            </div>
+        </div>
+    </div>
+    <img id="wizard" class="wizard" src="./assets/wizard.gif" alt="wizard">
+    <img class="demon" src="./assets/demon.gif" alt="demon">
+    <script src="./js/utils.js"></script>
+    <script src="./js/Demon.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
