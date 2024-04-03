@@ -13,12 +13,11 @@
     <header>
         <div id="score" class="score">Cancelled Spell: 0</div>
         <div id="shield">Shield: 3</div>
-        <div id="time">Surviving time: 00:00</div>
     </header>
 
     <div class="game-container">
         <canvas id="canvas"></canvas>
-        <p id="game-text">Demon is throwing spell !</p>
+        <p id="game-text">A demon appeared</p>
         <div id="menu" class="menu">
             <h1>TYPING GAME</h1>
             <button id="start" class="start">start</button>
@@ -29,13 +28,15 @@
             </select>
             <div class="score-container">
                 <p id="best-score">High score: 0</p>
-                <!-- <p id="best-time">High time: 00:00</p> -->
             </div>
         </div>
     </div>
     <img id="wizard" class="wizard" src="./assets/wizard.gif" alt="wizard">
     <img class="demon" src="./assets/demon.gif" alt="demon">
     <script src="./js/utils.js"></script>
+    <script src="./js/SoundManager.js"></script>
+    <script src="./js/ScoreManager.js"></script>
+    <script src="./js/Game.js"></script>
     <script src="./js/Demon.js"></script>
     <script src="./js/Player.js"></script>
     <script src="index.js"></script>

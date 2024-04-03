@@ -15,8 +15,8 @@ function adjustCanvasForHighDPI(canvas) {
   
 document.addEventListener("DOMContentLoaded", function () {
     const canvas = document.getElementById("canvas");
+
     adjustCanvasForHighDPI(canvas);
-    animate();
 });
 
 document.addEventListener("keydown", function (e) {
